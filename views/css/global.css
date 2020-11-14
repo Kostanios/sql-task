@@ -1,0 +1,151 @@
+body{
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.link{
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: skyblue;
+}
+.HeaderRouter{
+    list-style-type: none;
+}
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    background: aliceblue;
+    padding:  0 10vw;
+}
+.header_navigation{
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+}
+.logo{
+    color: cornflowerblue;
+    font-size: 30px;
+}
+.container{
+    margin-top: 50px;
+    padding: 0 calc(10vw - 15px);
+}
+.action_panel{
+    margin: 0 15px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid cornflowerblue;
+    padding-bottom: 5px;
+}
+.deleteButton{
+    background-color: rgb(100, 148, 237);
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px  solid transparent;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.deleteButton:hover{
+  transition: 0.5s;
+  border: 1px solid aliceblue;
+  background-color: rgba(100, 148, 237, 0.8);
+}
+.card_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    margin: 15px;
+    width: 220px;
+    height: 250px;
+    padding: 10 20px;
+    border-radius: 5px;
+    border: 1px solid cornflowerblue;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+.card_field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color:  cornflowerblue;
+}
+.card-content{
+    cursor: default;
+}
+.card input{
+    cursor: pointer;
+}
+.createHeader{
+  font-family: 'Lato', sans-serif;
+  margin: 15px;
+  font-size: 20px;
+  border-bottom: 2px solid black;
+}
+.input_container{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.special_input_container{
+    display: flex;
+    flex-direction: column;
+}
+.field{
+    font-size: 14px;
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    max-width: 300px;
+    margin: 15px;
+    font-family: 'Lato', sans-serif;
+    outline: none;
+}
+
+.field:focus{
+    transition: border-bottom 0.5s;
+    border-bottom: 2px solid cornflowerblue;
+}
+.field::placeholder{
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.addButton{
+    background-color: rgb(100, 148, 237);
+    color: aliceblue;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    border-radius: 3px;
+    border: 1px  solid transparent;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.addButton:hover{
+    transition: 0.5s;
+    border: 1px solid aliceblue;
+    background-color: rgba(100, 148, 237, 0.8);
+  }
+#specialForm{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.warning{
+    font-family: 'Lato', sans-serif;
+    margin: 15px;
+    font-size: 20px;
+}

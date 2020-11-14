@@ -1,0 +1,25 @@
+<div id='product container'>
+    <form action="/" method="POST">
+        <div class="action_panel"> <button class="deleteButton" type="submit">delete selected products</button> </div>
+
+        {{#if results.length}}
+        <div class="card_container">
+            {{#each results}}
+                <div class="card">
+                    <input type="checkbox" name="{{id}}">
+                    <li class="card-content">
+                        <div class="{{id}} card_field">
+                            <p>{{CKU}}</p>
+                            <p>{{name}}</p>
+                            <p>{{cost}}$</p>
+                            <p>{{parameter}} {{parameterHandler type parameter}}</p>
+                        </div>
+                    </li>
+                </div>
+                {{/each}}
+        </div>
+        {{else}}
+            <p class="warning">No products</p>
+        {{/if}}
+    </form>
+</div>

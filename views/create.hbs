@@ -1,0 +1,20 @@
+<form action="/create" method="POST">
+    <h1 class="createHeader">Add Product</h1>
+    <div class='input_container'>
+        {{#if err}}
+        <input class="field" type="text" name="CKU" placeholder="{{err}}">
+        {{else}}
+        <input class="field" type="text" name="CKU" placeholder="CKU">
+        {{/if}}
+        <input class="field" type="text" name="name" placeholder="name">
+        <input class="field" type="number" min="0" name="cost" placeholder="cost">
+        <select class="field" id='typeSelector' name="type">
+            <option value=""></option>
+            <option value="book">Book</option>
+            <option value="DVD">DVD</option>
+            <option value="furniture">Furniture</option>
+        </select>
+        <div id="specialForm"></div>
+    </div>
+    <script src='/js/create.js'></script>
+</form>
